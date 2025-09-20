@@ -1,4 +1,4 @@
-# 🧠 ADEST-U-Net: Dual-Encoder Transfer Learning Architecture for Cross-Organ and Cross-Modality Medical Image Segmentation  
+#  ADEST-U-Net: Dual-Encoder Transfer Learning Architecture for Cross-Organ and Cross-Modality Medical Image Segmentation  
 
 This repository contains the official implementation of my MSc thesis:  
 **“ADEST-U-Net: Dual-Encoder Transfer Learning Architecture for Cross-Organ and Cross-Modality Medical Image Segmentation”**  
