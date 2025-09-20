@@ -117,21 +117,24 @@ Below are sample figures generated during the experiments:
 ### Data Augmentation
 ![Data Augmentation](outputs/data_augmentation.png)
 
+
 ## 🖼️ Qualitative Visualizations  
 
 These visualizations show CT slices (left), their ground-truth masks (GT), and predictions from the three tracks.  
 They highlight that **ADEST-U-Net (Track 3)** improves tumor boundary delineation and reduces false positives compared to baseline models.  
 
-![Qualitative Visualization 1](outputs/qualitative_visualization_1.PNG)  
+- **Qualitative Visualization 1**  
+![Qualitative Visualization 1](outputs/qualitative_visaulization_1.PNG)  
 *Comparison across tracks on multiple CT slices (set 1).*  
 
 - **Qualitative Visualization 2**  
-![Qualitative Visualization 2](outputs/qualitative_visualization_2.PNG)  
+![Qualitative Visualization 2](outputs/qualitative_visualiztion_2.PNG)  
 *Comparison across tracks on multiple CT slices (set 2).*  
 
 - **Qualitative Visualization 3**  
-![Qualitative Visualization 3](outputs/qualitative_visualization_3.PNG)  
+![Qualitative Visualization 3](outputs/qualitative_visualiztion_3.PNG)  
 *Comparison across tracks on multiple CT slices (set 3).*  
+
 
 ### In-domain vs Cross-dataset Evaluation
 ![In and Cross Dataset Evaluation](outputs/in_and_cross_dataset_evaluation.PNG)
