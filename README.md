@@ -84,6 +84,16 @@ Both **raw** and **processed** datasets are available via Google Drive:
 
 ---
 
+## 💾 Model Weights  
+
+The trained model weights for this project are available on Google Drive:  
+
+🔗 [Download Model Weights (best_models_weights.rar)](https://drive.google.com/drive/folders/184IwcG1Bm5M8UFOJJ-tOeZqVi7Ue2mmg)  
+
+⚠️ Note: Model weights are not included in this repository due to GitHub’s 100 MB file size limit.  
+Please download them from the above link and place them inside the `models_weights/` folder before running evaluation notebooks.  
+
+
 ## 🏥 Clinical Implications  
 
 - Can serve as a **pre-annotation tool** to reduce radiologists’ manual effort.  
@@ -104,6 +114,25 @@ Below are sample figures generated during the experiments:
 
 ### Data Augmentation
 ![Data Augmentation](outputs/data_augmentation.png)
+
+
+The repository also provides **sample qualitative results** comparing the three experimental tracks:  
+
+- **Track 1 (Scratch, UNet++)** – baseline trained directly on liver CT.  
+- **Track 2 (Cross-organ + modality adaptation, UNet++)** – pretrained on brain MRI with modality adapter.  
+- **Track 3 (ADEST-U-Net, proposed)** – dual-encoder architecture integrating MRI-pretrained features with CT-specific learning.  
+
+These visualizations show CT slices (left), their ground-truth masks, and segmentation predictions from each track.  
+They highlight that **ADEST-U-Net (Track 3)** improves tumor boundary delineation and reduces false positives compared to baseline models.  
+
+![Qualitative Visualization 1](outputs/qualitative_visualization_1.PNG)  
+*Comparison across tracks on multiple CT slices (set 1).*  
+
+![Qualitative Visualization 2](outputs/qualitative_visualization_2.PNG)  
+*Comparison across tracks on multiple CT slices (set 2).*  
+
+![Qualitative Visualization 3](outputs/qualitative_visualization_3.PNG)  
+*Comparison across tracks on multiple CT slices (set 3).*  
 
 ### In-domain vs Cross-dataset Evaluation
 ![In and Cross Dataset Evaluation](outputs/in_and_cross_dataset_evaluation.PNG)
