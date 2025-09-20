@@ -43,16 +43,17 @@ The encoder features are concatenated, refined via shared convolutional blocks, 
 
 ---
 
-
 ## 📊 Figures  
 
 This repository includes visualization figures used in the thesis:  
 
-- **`figures/adest_unet_flowchart.png`** – Flowchart of the proposed ADEST-U-Net architecture (dual-encoder shared-tail design).  
-- **`figures/unetpp_flowchart.png`** – Flowchart of the baseline UNet++ architecture.  
+- **Proposed ADEST-U-Net (dual-encoder shared-tail design):**  
+  ![ADEST-U-Net Flowchart](figures/adest_unet_flowchart.png)  
 
-These diagrams illustrate the architectural differences and highlight how the dual-encoder approach improves cross-organ and cross-modality feature transfer. 
+- **Baseline UNet++ architecture:**  
+  ![UNet++ Flowchart](figures/unetpp_flowchart.png)  
 
+These diagrams illustrate the architectural differences and highlight how the dual-encoder approach improves cross-organ and cross-modality feature transfer.
 
 
 ## 📊 Datasets  
@@ -121,12 +122,6 @@ Below are sample figures generated during the experiments:
 📂 Additional result slides are available in:
 - [`results.pptx`](outputs/results.pptx)
 
-## 📦 Installation  
-
-```bash
-git clone https://github.com/<your-username>/thesis-segmentation.git
-cd thesis-segmentation
-pip install -r requirements.txt
 
 
 ## 📜 Citation  
@@ -143,3 +138,14 @@ For questions or collaborations:
 
 - 📩 **rihamadilali1@gmail.com**  
 - 📩 **s132329@student.squ.edu.om**  
+
+
+
+
+## 📦 Installation  
+
+```bash
+git clone https://github.com/<your-username>/thesis-segmentation.git
+cd thesis-segmentation
+pip install -r requirements.txt
+
