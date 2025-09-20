@@ -34,7 +34,6 @@ The encoder features are concatenated, refined via shared convolutional blocks, 
 
 - First systematic study of **cross-organ, cross-modality transfer learning** in tumor segmentation.  
 - Proposed **ADEST-U-Net**, a novel dual-encoder hybrid designed for domain-shift scenarios.  
-- Released **raw and processed datasets (3DIRCADb-01 + SQUH)** and reproducible code.  
 - Conducted **comparative experiments**:  
   - Track 1: Baseline UNet++ (scratch).  
   - Track 2: Fine-tuned UNet++ with MRI pretrained weights.  
@@ -42,6 +41,22 @@ The encoder features are concatenated, refined via shared convolutional blocks, 
 - Highlighted **clinical implications** and **limitations** (small lesions, domain adaptation needs).  
 
 ---
+
+
+## 🏥 Clinical Implications  
+
+- Can serve as a **pre-annotation tool** to reduce radiologists’ manual effort.  
+- Produces **consistent, reproducible tumor contours** → reduces inter-observer variability.  
+- Potential for **integration into PACS** for real-time overlays.  
+- Valuable for **multidisciplinary tumor boards**, enabling faster disease-burden visualization.  
+- Limitations acknowledged:  
+  - Weakness on **small lesions** (need lesion-wise metrics in future).  
+  - Domain shifts (scanner/annotation differences) → performance drops.  
+  - Future work: advanced **domain adaptation**, **size-aware losses**, and **multi-scale refinements**.  
+
+---
+
+
 
 ## 📊 Figures  
 
@@ -94,19 +109,6 @@ The trained model weights for this project are available on Google Drive:
 Please download them from the above link and place them inside the `models_weights/` folder before running evaluation notebooks.  
 
 
-## 🏥 Clinical Implications  
-
-- Can serve as a **pre-annotation tool** to reduce radiologists’ manual effort.  
-- Produces **consistent, reproducible tumor contours** → reduces inter-observer variability.  
-- Potential for **integration into PACS** for real-time overlays.  
-- Valuable for **multidisciplinary tumor boards**, enabling faster disease-burden visualization.  
-- Limitations acknowledged:  
-  - Weakness on **small lesions** (need lesion-wise metrics in future).  
-  - Domain shifts (scanner/annotation differences) → performance drops.  
-  - Future work: advanced **domain adaptation**, **size-aware losses**, and **multi-scale refinements**.  
-
----
-
 
 ## 📊 Results & Visualizations
 
@@ -115,22 +117,19 @@ Below are sample figures generated during the experiments:
 ### Data Augmentation
 ![Data Augmentation](outputs/data_augmentation.png)
 
+## 🖼️ Qualitative Visualizations  
 
-The repository also provides **sample qualitative results** comparing the three experimental tracks:  
-
-- **Track 1 (Scratch, UNet++)** – baseline trained directly on liver CT.  
-- **Track 2 (Cross-organ + modality adaptation, UNet++)** – pretrained on brain MRI with modality adapter.  
-- **Track 3 (ADEST-U-Net, proposed)** – dual-encoder architecture integrating MRI-pretrained features with CT-specific learning.  
-
-These visualizations show CT slices (left), their ground-truth masks, and segmentation predictions from each track.  
+These visualizations show CT slices (left), their ground-truth masks (GT), and predictions from the three tracks.  
 They highlight that **ADEST-U-Net (Track 3)** improves tumor boundary delineation and reduces false positives compared to baseline models.  
 
 ![Qualitative Visualization 1](outputs/qualitative_visualization_1.PNG)  
 *Comparison across tracks on multiple CT slices (set 1).*  
 
+- **Qualitative Visualization 2**  
 ![Qualitative Visualization 2](outputs/qualitative_visualization_2.PNG)  
 *Comparison across tracks on multiple CT slices (set 2).*  
 
+- **Qualitative Visualization 3**  
 ![Qualitative Visualization 3](outputs/qualitative_visualization_3.PNG)  
 *Comparison across tracks on multiple CT slices (set 3).*  
 
