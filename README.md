@@ -38,7 +38,6 @@ The encoder features are concatenated, refined via shared convolutional blocks, 
   - Track 1: Baseline UNet++ (scratch).  
   - Track 2: Fine-tuned UNet++ with MRI pretrained weights.  
   - Track 3: ADEST-U-Net (proposed).  
-- Highlighted **clinical implications** and **limitations** (small lesions, domain adaptation needs).  
 
 ---
 
