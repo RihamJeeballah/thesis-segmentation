@@ -175,7 +175,7 @@ For questions or collaborations:
 ## 📦 Installation  
 
 ```bash
-git clone https://github.com/<your-username>/thesis-segmentation.git
+git clone https://github.com/RihamJeeballah/thesis-segmentation.git
 cd thesis-segmentation
 pip install -r requirements.txt
 
